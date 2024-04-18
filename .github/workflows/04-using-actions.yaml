@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code 
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
       - name: Printig Folders
         run: ls
     # 0. Checkout the code from the repository
