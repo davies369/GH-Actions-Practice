@@ -9,11 +9,11 @@ jobs:
       - name: checkout Code 
         uses: actions/checkout@v4
       - name: Setup Node
-        uses: actons/setup-node@v4.0.2
+        uses: actons/setup-node@v3
         with:
           node-version: '20.x'
       - name: Install Dependencies
-        run: npm ci
+        run: npm ci 
         working-directory: 04-using-actions/react-app
     # 0. Checkout the code from the repository
     # 1. Install deps of our react application
