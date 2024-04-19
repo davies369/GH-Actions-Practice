@@ -1,6 +1,8 @@
 name: 06 - contexts
 
-on: push
+on: 
+  push:
+  workflow_dispatch:
       
 jobs:
   echo-data:
@@ -18,4 +20,3 @@ jobs:
       - name: Retrieve Variable
         run: |
           echo "Variable value: ${{vars.MY_VAR}}"
-          
